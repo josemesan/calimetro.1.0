@@ -1,7 +1,7 @@
     <div class="form-group">
         <label class="form-control-label">Fecha Hora</label>
         <div class="d-flex">
-            <input class="form-control"  type="date" name="fechaHora" [(ngModel)]="desde" (click)="loadFecha()"/>
+            <input class="form-control" value="desde" type="date" name="fechaHora" [(ngModel)]="desde" (load)="loadFecha()"/>
         </div>{{desde}}
     </div>
     <div class="footer" >

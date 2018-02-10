@@ -14,11 +14,10 @@ import {ActivatedRoute} from '@angular/router';
 export class FooterComponent implements OnInit {
 
     currentAccount: any;
-    private desde: string;
-    private hasta: string;
     eventSubscriber: Subscription;
     subscription: Subscription;
     private tablaTrenes: TablaTrenes[];
+    private desde = new Date().getUTCDate();
 
     constructor(
         private tablaTrenesService: TablaTrenesService,
