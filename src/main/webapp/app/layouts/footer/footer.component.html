@@ -1,3 +1,15 @@
-<div class="footer">
-    <p jhiTranslate="footer">This is your footer</p>
-</div>
+    <div class="form-group">
+        <label class="form-control-label">Fecha Hora</label>
+        <div class="d-flex">
+            <input class="form-control"  type="date" name="fechaHora" [(ngModel)]="desde" (click)="loadFecha()"/>
+        </div>{{desde}}
+    </div>
+    <div class="footer" >
+    <td> "trenes 1 " </td>
+    <td> " trenes 2" </td>
+    </tr>
+    <tr *ngFor="let trenes of tablaTrenes;trackBy: trackId">
+        <td> {{trenes.id}}</td>
+        <td> {{trenes.fechaHora}}</td>
+    </tr>
+    </div>

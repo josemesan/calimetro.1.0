@@ -28,6 +28,8 @@ import {
     ErrorComponent
 } from './layouts';
 
+import {TablaTrenesService} from './entities/tabla-trenes';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -49,6 +51,7 @@ import {
         FooterComponent
     ],
     providers: [
+        TablaTrenesService,
         ProfileService,
         PaginationConfig,
         UserRouteAccessService,
